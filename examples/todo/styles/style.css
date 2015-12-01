@@ -1,0 +1,11 @@
+input:checked {
+  background-color: rgb(255, 0, 0);
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+
+input:checked + .item-title {
+  text-decoration: line-through;
+  color: ##808080;
+}
