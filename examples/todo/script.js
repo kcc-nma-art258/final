@@ -31,6 +31,8 @@ function formListener(e){
 
   // Add li element to list
   list.insertBefore(item, list.firstChild);
+
+  form['new-item-input'].value = '';
 }
 
 // Add an event listener for form submit events
