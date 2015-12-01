@@ -22,5 +22,16 @@ body {
 }
 
 li {
-  
+
+}
+
+
+.item-checkbox:checked {
+  background-color: red;
+  text-decoration: overline;
+}
+
+input.item-checkbox:checked + .item-title {
+text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.25);
 }
