@@ -31,6 +31,7 @@ function formListener(e){
 
   // Add li element to list
   list.insertBefore(item, list.firstChild);
+  form['new-item-input'].value = '';
 //  list.appendChild(item);
 }
 
