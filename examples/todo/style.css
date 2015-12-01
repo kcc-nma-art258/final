@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px; /* 100% = 1em = 16px */
+    line-height: 1.5em; /* 24px/16px = 1.5em */
+    color: #fff;
+}
+
+
+ .container {
+    /* Fixed width: 960px */
+    /* 960px / 16px (base) = 60em - (.625em padding x 2) = 50em */
+    width: 58.75em; /* 60em - (.625em padding x 2) = 50em */
+    margin: 0 auto;
+    height: 100%;
+}
