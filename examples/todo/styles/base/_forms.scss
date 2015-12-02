@@ -1,0 +1,17 @@
+
+form {
+}
+
+  input.item-checkbox {
+    display: block;
+    width: 100%;
+    }
+
+  input.item-checkbox:checked + .item-title {
+  /*  background-color: rgb(255, 0,0);
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px; */
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0);
+  }
