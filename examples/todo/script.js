@@ -14,6 +14,7 @@ function formListener(e){
   // Create new li element to insert in list
   var item = document.createElement('li');
   item.setAttribute('class', 'item');
+// here the cancel button
 
   // Create checkbox to toggle item status
   var checkbox = document.createElement('input');
@@ -37,3 +38,7 @@ function formListener(e){
 
 // Add an event listener for form submit events
 form.addEventListener('submit', formListener);
+///here the cancel button
+
+//for (var i = 0; i< )
+//addTolist();
