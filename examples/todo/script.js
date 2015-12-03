@@ -26,9 +26,22 @@ function formListener(e){
   title.setAttribute('class', 'item-title');
   title.textContent = value;
 
+  var deleteListItem = document.createElement('button');
+  deleteListItem.textContent = 'Remove';
+
+  function removeListItem(event){
+    var listItem = event.target.parentNode;
+    var list = listItem.parentNode;
+
+    list.removeChild(listItem);
+  }
+  
+  deleteListItem.addEventListener('click', removeListItem);
+
   // Add checkbox and title to li element
   item.appendChild(checkbox);
   item.appendChild(title);
+  item.appendChild(deleteListItem);
 
   // Add li element to list
   list.insertBefore(item, list.firstChild);
@@ -38,7 +51,10 @@ function formListener(e){
 
 // Add an event listener for form submit events
 form.addEventListener('submit', formListener);
+
+
 ///here the cancel button
+
 
 //for (var i = 0; i< )
 //addTolist();
