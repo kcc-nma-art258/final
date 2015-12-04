@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
     background: #000000;
     height: 100%;
@@ -36,4 +42,87 @@ li {
 input.item-checkbox:checked + .item-title {
 text-decoration: line-through;
   color: rgba(255, 255, 255, 0.25);
+}
+
+body {
+  transition: background-color 0.25s ease;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.button-group {
+  margin: 20px 0 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  button {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+/* mike */
+.stuff {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+}
+
+.theme-1 {
+  background-color: red;
+  background: url(image/Desktop.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+font-family: sans-serif;
+  .stuff {
+    background-color: blue;
+  }
+}
+
+.theme-2 {
+  background-color: orange;
+  background: url(image/them2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: serif;
+  .stuff {
+    background-color: indigo;
+    border-radius: 0px;
+  }
+}
+
+.theme-3 {
+  background-color: yellow;
+
+  .stuff {
+    background-color: violet;
+    border-radius: 0px;
+    transform: rotate(45deg);
+  }
+}
+
+.theme-4 {
+  background-color: green;
+
+  .stuff {
+    background-color: chartreuse;
+    border-radius: 0px;
+    transform: rotate(45deg) scale(0.5);
+  }
 }

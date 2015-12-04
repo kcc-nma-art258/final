@@ -35,7 +35,7 @@ function formListener(e){
 
     list.removeChild(listItem);
   }
-  
+
   deleteListItem.addEventListener('click', removeListItem);
 
   // Add checkbox and title to li element
@@ -58,3 +58,30 @@ form.addEventListener('submit', formListener);
 
 //for (var i = 0; i< )
 //addTolist();
+
+//mike button style
+var button_1 = document.querySelectorAll('.button_1')[0];
+var button_2 = document.querySelectorAll('.button_2')[0];
+var button_3 = document.querySelectorAll('.button_3')[0];
+var button_4 = document.querySelectorAll('.button_4')[0];
+
+function changeColor_1(){
+  document.body.setAttribute('class', 'theme-1');
+}
+
+function changeColor_2(){
+  document.body.setAttribute('class', 'theme-2');
+}
+
+function changeColor_3(){
+  document.body.setAttribute('class', 'theme-3');
+}
+
+function changeColor_4(){
+  document.body.setAttribute('class', 'theme-4');
+}
+
+button_1.addEventListener('click', changeColor_1);
+button_2.addEventListener('click', changeColor_2);
+button_3.addEventListener('click', changeColor_3);
+button_4.addEventListener('click', changeColor_4);
