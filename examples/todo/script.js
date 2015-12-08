@@ -31,7 +31,7 @@ function formListener(e){
   function removeListItem(event){
     var listItem = event.target.parentNode
     var list = listItem.parentNode
-    
+
     list.removeChild(listItem);
   }
 
