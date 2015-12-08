@@ -7,16 +7,23 @@ html,
 body {
   height: 100%;
   width: 100%;
+
+
 }
 
 body {
-    background: #000000;
+  background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#10EAD2, #009DE1); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#10EAD2, #009DE1); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#10EAD2, #009DE1); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#10EAD2, #009DE1); /* Standard syntax */
     height: 100%;
     font-family: 'Ubuntu', sans-serif;
 
     font-size: 18px; /* 100% = 1em = 16px */
     line-height: 1.5em; /* 24px/16px = 1.5em */
     color: #fff;
+      text-align: center;
 }
 
 /* font-family: 'Roboto Condensed', sans-serif; */
@@ -85,19 +92,25 @@ body {
 }
 
 .theme-1 {
-  background-color: red;
-  background: url(image/Desktop.png) no-repeat;
+  background-color: red;background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#FF2D8E, #FFF958); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#FF2D8E, #FFF958); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#FF2D8E, #FFF958); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#FF2D8E, #FFF958); /* Standard syntax */
   background-position: center;
   background-size: cover;
 font-family: sans-serif;
   .stuff {
-    background-color: blue;
+
   }
 }
 
 .theme-2 {
-  background-color: orange;
-  background: url(image/them2.jpg) no-repeat;
+  background-color: red;background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#1FD6ED, #CA39F8); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#1FD6ED, #CA39F8); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#1FD6ED, #CA39F8); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#1FD6ED, #CA39F8); /* Standard syntax */
   background-position: center;
   background-size: cover;
   font-family: serif;
@@ -109,7 +122,6 @@ font-family: sans-serif;
 
 .theme-3 {
   background-color: yellow;
-
   .stuff {
     background-color: violet;
     border-radius: 0px;

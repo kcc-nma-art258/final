@@ -85,3 +85,28 @@ button_1.addEventListener('click', changeColor_1);
 button_2.addEventListener('click', changeColor_2);
 button_3.addEventListener('click', changeColor_3);
 button_4.addEventListener('click', changeColor_4);
+
+<!--calender-->
+$(document).ready(function () {
+
+var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+var dayNames= [ "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday" ];
+
+var newDate = new Date();
+newDate.setDate(newDate.getDate());
+
+setInterval( function() {
+	var hours = new Date().getHours();
+	$(".hour").html(( hours < 10 ? "0" : "" ) + hours);
+    var seconds = new Date().getSeconds();
+	$(".second").html(( seconds < 10 ? "0" : "" ) + seconds);
+    var minutes = new Date().getMinutes();
+	$(".minute").html(( minutes < 10 ? "0" : "" ) + minutes);
+
+    $(".month span,.month2 span").text(monthNames[newDate.getMonth()]);
+    $(".date span,.date2 span").text(newDate.getDate());
+    $(".day span,.day2 span").text(dayNames[newDate.getDay()]);
+    $(".year span").html(newDate.getFullYear());
+}, 1000);
+
+});
