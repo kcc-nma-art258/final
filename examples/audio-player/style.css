@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  position: fixed;
+}
+
+.trigger-pads {
+  list-style: none;
+  padding: 4em 0.5em 0;
+  height: 100%;
+}
+
+.trigger-pads:before,
+.trigger-pads:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.li {
+  float: left;
+  height: 25%;
+  width: 25%;
+  padding: 0.5em;
+}
+
+.pad {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 1px solid magenta;
+  border-radius: 3px;
+  -webkit-transition: all 0.15s extend;
+          transition: all 0.15s extend;
+}
+
+.pad:hover {
+  background-color: #efefef;
+}
+
+.pad:active {
+  border-color: magenta;
+}
+
+/*# sourceMappingURL=style.css.map */

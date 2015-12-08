@@ -6,24 +6,47 @@
   box-sizing: border-box;
 }
 
-
-
-.trigger-pads {
-  list-style: none;
-  padding: 2em 0.5em 0;
-  height: 100%;
+@mixin cf {
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
 }
 
 h1 {
   position: fixed;
 }
 
+.trigger-pads {
+  list-style: none;
+  padding: 4em 0.5em 0;
+  height: 100%;
+  @include cf;
+}
+
 .li {
   float: left;
+  height: 25%;
   width: 25%;
+  padding: 0.5em;
 }
 
 .pad {
-  height: 100px;
   width: 100%;
+  height: 100%;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(255, 0, 255);
+  border-radius: 3px;
+  transition: all 0.15s extend;
+
+  &:hover{
+    background-color: #efefef;
+  }
+
+  &:active {
+    border-color: rgb(255, 0, 255);
+  }
 }

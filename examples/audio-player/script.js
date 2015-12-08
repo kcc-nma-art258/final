@@ -26,11 +26,13 @@ var samples = [
 ];
 
 // Create function to add audio samples to listener
-function addSamplesToListener(i){}
+function addSamplesToListener(i){
 
   // Create listener for pad button click event
   function padListener(){
-    var audio = new Audio(path + samples[i]);
+    var audioSampleString = path + samples[i];
+    console.log('Button #' + i +': ' + audioSampleString)
+    var audio = new Audio(audioSampleString);
     audio.play();
   }
 
