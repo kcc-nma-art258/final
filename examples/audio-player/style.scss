@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.trigger-pads {
+  list-style: none;
+  padding: 2em 0.5em 0;
+  height: 100%;
+}
+
+h1 {
+  position: fixed;
+}
+
+.li {
+  float: left;
+  width: 25%;
+}
+
+.pad {
+  height: 100px;
+  width: 100%;
+}
