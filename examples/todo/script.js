@@ -25,21 +25,26 @@ function formListener(e){
   title.setAttribute('class', 'item-title');
   title.textContent = value;
 
-  var deleteListItem = document.createdElement('button');
+  var deleteListItem = document.createElement('button');
   deleteListItem.textContent = 'Remove';
+
+  function removeListItem(){
+    var listItem = event.target.parentNode;
+    var list = listItem.parentNode;
+    list.removeChild(listItem);
+  }
+
+  deleteListItem.addEventListener('click', removeListItem);
 
   // Add checkbox and title to li element
   item.appendChild(checkbox);
   item.appendChild(title);
-  item.appendChild(deleteListItem);
+  item.appendChild (deleteListItem);
 
-  // Add li element to top of list
-  list.insertBefore(item, list.firstChild);
+// Add li element to list
+list.insertBefore(item, list.firstChild);
 
-  // Clear form input after entering value
-  form['new-item-input'].value= '';
-
-
+form['new-item-input'].value= '';
 
 }
 

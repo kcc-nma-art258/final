@@ -1,0 +1,20 @@
+/* VARIABLES */
+
+$base-font: 16px;
+$line-height: 1.5;
+$serif: 'Lobster Two', Georgia, Times, serif;
+$sans-serif: Helvetica, Arial, sans-serif;
+$center: center;
+
+/* MIXINS */
+@mixin cf {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
