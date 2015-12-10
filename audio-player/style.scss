@@ -52,4 +52,9 @@ h1 {
   }
 }
 
-@keyframes
+
+@keyframes fadeInOut {
+  0%    {background-color: rgba(255, 0, 255, 0); }
+  50%   {background-color: rgba(255, 0, 255, 1); }
+  100%  {background-color: rgba(255, 0, 255, 0); }
+}
