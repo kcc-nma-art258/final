@@ -1,13 +1,36 @@
-input:checked {
-  background-color: #990099;
+input[type="checkbox"]:checked {
+  background-color: #FF0000;
   -webkit-appearance: none;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  padding: .65em;
+  border-radius: 25%;
+}
+
+input[type="checkbox"] {
+  background-color: #009900;
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  padding: .65em;
+  border-radius: 25%;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+input[type="text"]:focus{
+  outline: 0;
 }
 
 input:checked + .item-title {
   text-decoration: line-through;
   color: #ccc;
+}
+
+span.item-title {
+    padding: 0 .5em;
 }
 
 h1 {
@@ -16,7 +39,7 @@ h1 {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
-  color: #990099;
+  color: #009900;
   text-rendering: optimizeLegibility;
 }
 
