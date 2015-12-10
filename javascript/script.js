@@ -42,6 +42,30 @@ for (var i = 0; i < pads.length; i++){
   addSamplesToListener(i);
 }
 
+// Create a object with
+// keyboard keys as properties
+// and Unicode keycode values
+var keyCode = {
+  q: 113,
+  w: 119,
+  e: 101,
+  r: 114,
+  a: 97,
+  s: 115,
+  d: 100,
+  f: 102,
+  u: 117,
+  i: 105,
+  o: 111,
+  p: 112,
+  h: 104,
+  j: 106,
+  k: 107,
+  l: 108
+}
+
+window.addEventListener('keypress', keyPressListener);
+
 // keypress listener to find keycode values
 function keyPressListener(event) {
   console.log(event.keyCode);
@@ -113,29 +137,3 @@ function keyPressListener(event) {
   }
 
 }
-
-window.addEventListener('keypress', keyPressListener);
-
-// Create a object with
-// keaboad keys as properties
-// and Unicode keycode values
-var keyCode = {
-  q: 113,
-  w: 119,
-  e: 101,
-  r: 114,
-  a: 97,
-  s: 115,
-  d: 100,
-  f: 102,
-  u: 117,
-  i: 105,
-  o: 111,
-  p: 112,
-  h: 104,
-  j: 106,
-  k: 107,
-  l: 108
-}
-
-// keypress listener to find keycode values
