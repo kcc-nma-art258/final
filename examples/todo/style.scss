@@ -1,4 +1,13 @@
+// Base
+@import "base/reset";
+@import "base/utilities";
+
 .list {
   list-style: none;
   margin: 10px;
+}
+
+input:checked + .item-title {
+  text-decoration: line-through;
+  color: #ccc;
 }
