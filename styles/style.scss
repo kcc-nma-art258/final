@@ -15,6 +15,11 @@
     }
 }
 
+// $small-screen:  'only screen';
+// $medium-screen: 'only screen and (min-width: em-calc(640px, 16px))';
+// $large-screen:  'only screen and (min-width: em-calc(1024px, 16px))';
+// $xlarge-screen: 'only screen and (min-width: em-calc(1440px, 16px))';
+
 @import url(https://fonts.googleapis.com/css?family=Frijole);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Slackey);
@@ -37,7 +42,7 @@ body {
 h1 {
   font-family: 'Frijole', cursive;
   text-align: center;
-  padding: 2em;
+  padding: 1.5em;
   font-size: 3em;
 }
 
@@ -86,12 +91,30 @@ li {
 
 .pad-1, .pad-2, .pad-3, .pad-4, .pad-5, .pad-6, .pad-7, .pad-8, .pad-9, .pad-10, .pad-11, .pad-12, .pad-13, .pad-14, .pad-15, .pad-16 {
   background-color: #ffffff;
-  color: #000000;
+  color: #333333;
   height: 200px;
   width: 100%;
   outline: none;
+  font-family: 'Frijole', cursive;
+  font-size: 2.5em;
   //appearance: none;
   border-radius: 30px;
+}
+
+.pad-1:hover, .pad-2:hover, .pad-3:hover, .pad-4:hover {
+  color: #00ffcc;
+}
+
+.pad-5:hover, .pad-6:hover, .pad-7:hover, .pad-8:hover {
+  color: #00ffcc;
+}
+
+.pad-9:hover, .pad-10:hover, .pad-11:hover, .pad-12:hover {
+  color: #00ffcc;
+}
+
+.pad-13:hover, .pad-14:hover, .pad-15:hover, .pad-16:hover {
+  color: #00ffcc;
 }
 
 button.pad-1:hover, button.pad-2:hover, button.pad-3:hover, button.pad-4:hover {
@@ -110,8 +133,8 @@ button.pad-13:hover, button.pad-14:hover, button.pad-15:hover, button.pad-16:hov
   background-color: #cc00ff;
 }
 
-@keyframes fadeInOut{
-  0%    {background-color: rgba(255, 0, 255, 0);}
-  50%   {background-color: rgba(255, 0, 1, 0);}
-  100%  {background-color: rgba(255, 0, 255, 0);}
-}
+// @keyframes fadeInOut{
+//   0%    {background-color: rgba(255, 0, 255, 0);}
+//   50%   {background-color: rgba(255, 0, 1, 0);}
+//   100%  {background-color: rgba(255, 0, 255, 0);}
+// }
