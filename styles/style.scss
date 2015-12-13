@@ -15,11 +15,17 @@
     }
 }
 
+
+
 .trigger-pads{
   list-style: none;
   padding: 2em, 2em;
   height: 100%;
   @include cf;
+}
+
+.pads {
+  margin: 8em;
 }
 
 li {
@@ -28,16 +34,19 @@ li {
 }
 
 .pad{
+  color: #ffffff;
   height: 200px;
   width: 100%;
   appearance: none;
-  background-color: #cc66ff;
-  border: 1px solid rgb(153, 0, 204);
-  border-radius: 3px;
+  background-color: #000000;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 8px;
 }
 
-@keyframes fadeInOut{
-  0%    {background-color: rgba(255, 0, 255, 0);}
-  50%   {background-color: rgba(255, 0, 1, 0);}
-  100%  {background-color: rgba(255, 0, 255, 0);}
-}
+
+
+// @keyframes fadeInOut{
+//   0%    {background-color: rgba(255, 0, 255, 0);}
+//   50%   {background-color: rgba(255, 0, 1, 0);}
+//   100%  {background-color: rgba(255, 0, 255, 0);}
+// }
