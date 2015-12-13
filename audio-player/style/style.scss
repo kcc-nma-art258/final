@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+      background-color: #00CC55;
 }
 
 @mixin cf {
@@ -15,11 +16,21 @@
   }
 }
 
+/*
+ * Layouts
+ */
+ @import "layout/grid";
+
 h1 {
+  font-family: "Baskerville", Georgia, Palatino, serif;;
+  font-weight: 400;
+  font-size: 2.61792em;
   position: fixed;
+  color: #fff;
 }
 
 .trigger-pads {
+  float: right;
   list-style: none;
   padding: 4em 0.5em 0;
   height: 100%;
@@ -37,23 +48,23 @@ li {
   width: 100%;
   min-height: 5em;
   appearance: none;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(255, 0, 255);
+  background-color: rgba(0, 0, 0, .5);
+  border: 1px solid rgb(100, 255, 255);
   border-radius: 3px;
   transition: background-color 0.05s ease;
 
   &:active {
-    background-color: rgb(255, 0, 255);
+    background-color: rgb(0, 255, 255);
   }
 
   &:focus {
     outline: none;
-     //animation: fadeInOut 0.25s ease;
+    animation: fadeInOut 0.25s ease;
   }
 }
 
-@keyframes fadeInOut {
+/*@keyframes fadeInOut {
   0%   { background-color: rgba(255, 0, 255, 0); }
-  50%  { background-color: rgba(255, 0, 255, 0); }
+  50%  { background-color: rgba(255, 0, 255, 1); }
   100% { background-color: rgba(255, 0, 255, 0); }
-}
+}*/
