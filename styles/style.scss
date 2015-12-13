@@ -15,11 +15,7 @@
     }
 }
 
-// $small-screen:  'only screen';
-// $medium-screen: 'only screen and (min-width: em-calc(640px, 16px))';
-// $large-screen:  'only screen and (min-width: em-calc(1024px, 16px))';
-// $xlarge-screen: 'only screen and (min-width: em-calc(1440px, 16px))';
-
+@import "media_queries";
 @import url(https://fonts.googleapis.com/css?family=Frijole);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Slackey);
