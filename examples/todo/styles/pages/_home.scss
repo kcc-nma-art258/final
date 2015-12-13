@@ -17,11 +17,24 @@ color: #fff;
 }
 
 
+li {
+  list-style: none;
+}
+
 .section01 {
   height: 30%;
   padding-top: 10em;
 
 }
+
+.item {
+  border: 1px solid #79DDF3;
+  text-align: left;
+  font-size: 22px;
+  height: 60px;
+
+}
+
 
 .item-checkbox:checked {
   background-color: red;

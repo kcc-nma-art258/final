@@ -18,7 +18,7 @@
 
     &:hover {
       background-color: #000;
-   
+
     }
 
     &:focus,
@@ -30,13 +30,26 @@
 
 
 .button {
-  background-color: #3190D8;
+
 }
 
 button {
-  background-color: #FF2381;
-  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  background: url(../image/remove.svg) no-repeat;
+  background-size: 100% 100%;
+  right: 10px;
+  margin: auto 0;
+}
+li:hover button {
+    position: absolute;
+  display:inline-block;
 
+     background: url(../image/remove.svg) no-repeat;
+     background-size: 100% 100%;
+     transition: all 0.3s ease;
+     right: 10px;
+     margin: 2px 0;
 }
 
 input[type="button"] {
@@ -90,4 +103,3 @@ input[type="reset"] {
   background-color: #000;
   color: #fff;
 }
-
