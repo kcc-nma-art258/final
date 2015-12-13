@@ -15,9 +15,39 @@
     }
 }
 
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
 
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
 
-.trigger-pads{
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  padding: 2em;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Squada One', cursive;
+  font-size: 2em;
+}
+
+.machineframe {
+  background-color: #333333;
+  padding: 2em;
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.trigger-pads {
   list-style: none;
   padding: 2em, 2em;
   height: 100%;
@@ -25,25 +55,39 @@
 }
 
 .pads {
-  margin: 8em;
+  margin: 6em;
 }
 
 li {
   float:left;
   width: 25%;
+  padding: 0.5em;
 }
 
-.pad{
-  color: #ffffff;
+.pad-1, .pad-2, .pad-3, .pad-4 {
+  border: 6px solid rgb(255, 51, 0);
+}
+
+.pad-5, .pad-6, .pad-7, .pad-8 {
+  border: 6px solid rgb(255, 153, 0);
+}
+
+.pad-9, .pad-10, .pad-11, .pad-12 {
+  border: 6px solid rgb(255, 255, 102);
+}
+
+.pad-13, .pad-14, .pad-15, .pad-16 {
+  border: 6px solid rgb(204, 0, 255);
+}
+
+.pad-1, .pad-2, .pad-3, .pad-4, .pad-5, .pad-6, .pad-7, .pad-8, .pad-9, .pad-10, .pad-11, .pad-12, .pad-13, .pad-14, .pad-15, .pad-16 {
+  background-color: #ffffff;
+  color: #000000;
   height: 200px;
   width: 100%;
   appearance: none;
-  background-color: #000000;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 8px;
+  border-radius: 30px;
 }
-
-
 
 // @keyframes fadeInOut{
 //   0%    {background-color: rgba(255, 0, 255, 0);}
