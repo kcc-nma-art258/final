@@ -1,0 +1,113 @@
+
+body {
+  background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#10EAD2, #009DE1); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#10EAD2, #009DE1); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#10EAD2, #009DE1); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#10EAD2, #009DE1); /* Standard syntax */
+height: 100%;
+font-family: 'Dosis', sans-serif;
+font-weight: 200;
+font-size: 18px; /* 100% = 1em = 16px */
+line-height: 1.5em; /* 24px/16px = 1.5em */
+color: #fff;
+  text-align: center;
+  transition: background-color 0.25s ease;
+  background-repeat: no-repeat;
+}
+
+.section01 {
+  height: 30%;
+  padding-top: 10em;
+  border: 1px solid red;
+}
+
+.item-checkbox:checked {
+  background-color: red;
+  text-decoration: overline;
+}
+
+input.item-checkbox:checked + .item-title {
+text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.button-group {
+  margin: 20px 0 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  button {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+/* mike */
+.stuff {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+}
+
+.theme-1 {
+background-color: red;background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#FF2D8E, #FFF958); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#FF2D8E, #FFF958); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#FF2D8E, #FFF958); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#FF2D8E, #FFF958); /* Standard syntax */
+background-position: center;
+background-size: cover;
+font-weight: 200;
+
+}
+
+.theme-2 {
+  background-color: red;background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#1FD6ED, #CA39F8); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#1FD6ED, #CA39F8); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#1FD6ED, #CA39F8); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#1FD6ED, #CA39F8); /* Standard syntax */
+  background-position: center;
+  background-size: cover;
+  font-family: serif;
+  .stuff {
+    background-color: indigo;
+    border-radius: 0px;
+  }
+}
+
+.theme-3 {
+  background-color: yellow;
+  .stuff {
+    background-color: violet;
+    border-radius: 0px;
+    transform: rotate(45deg);
+  }
+}
+
+.theme-4 {
+  background-color: green;
+
+  .stuff {
+    background-color: chartreuse;
+    border-radius: 0px;
+    transform: rotate(45deg) scale(0.5);
+  }
+}

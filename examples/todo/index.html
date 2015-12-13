@@ -2,55 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Todo List</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,500' rel='stylesheet' type='text/css'>
+    <title>Get Done</title>
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- google font -->
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,300italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-  <h1>It’s a lovely day to take a walk.”</h1>
-  <li class="year"></li>
-    <li class="month"></li>
-  <li class="day"></li>
-  <p>Monday</p>
-  <p>Nobember 30</p>
+  <header>
 
+        <h6 id="logo"><a href="index.html">Get Done</a></h6>
+    <nav id="mainnav">
 
-<!-- Form to create new items -->
-<form class="new-item-form">
-  <input type="text" name="new-item-input" />
-  <input type="submit" name="new-item-submit" />
-</form>
+          <p>Monday</p>
+          <p>Nobember 30</p>
 
-  <!-- List of items -->
-  <ul class="list">
-  </ul>
+    </nav>
+  </header>
 
-  <h4>What task need to be done?</h4>
-  <h5>Meeting with John</h5>
-  <h5>Doctor’s appoinment</h5>
-  <h5>Egg, carrot, basil, and rosemary</h5>
-  <h5>Brandy’s birthday</h5>
+  <div class="container">
+    <div class="section01">
+        <h1>Hello, Hyela</h1>
+        <h1>It’s a lovely day to take a walk.</h1>
+        <li class="year"></li>
+        <li class="month"></li>
+        <li class="day"></li>
+    </div>
 
-  <p>3 item left</p>
-  <p>Clear Complited</p>
+    <div class="section02">
+      <!-- Form to create new items -->
+      <form class="new-item-form">
+        <input type="text" name="new-item-input" />
+        <input type="submit" name="new-item-submit" />
+      </form>
 
-  <p>Change the background</p>
-  <p>Check the weather</p>
+        <!-- List of items -->
+        <ul class="list">
+        </ul>
+    </div>
 
-  <div class="button-group">
-    <button class="button_1">theme-1</button>
-    <button class="button_2">theme-2</button>
-    <button class="button_3">theme-3</button>
-    <button class="button_4">theme-4</button>
-  </div>
+    <div class="section03">
+        <p>Change the background</p>
+        <p>Check the weather</p>
 
-  <div class="stuff">
-  </div>
+        <div class="button-group">
+          <button class="button_1"></button>
+          <button class="button_2"></button>
+          <button class="button_3"></button>
+          <button class="button_4"></button>
+        </div>
 
+        <div class="stuff">
+        </div>
+
+    </div>
+</div>   <!-- container end -->
 
 
   <script src="script.js"></script>

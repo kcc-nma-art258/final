@@ -1,0 +1,93 @@
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    appearance: none;
+    background-color: transparent;
+    border: 0 none;
+
+    display: inline-block; // Make display properties consistent across the board
+    text-decoration: none; // Remove underline for anchor buttons
+    color: inherit;        // Inherit the default color (ie. black)
+    font: inherit;
+    padding: 0.5em 3em;
+    margin-bottom: 0.5em;
+    background-color: #DEDEDE;
+    border-radius: 0px;
+
+    &:hover {
+      background-color: #000;
+   
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+
+.button {
+  background-color: #3190D8;
+}
+
+button {
+  background-color: #FF2381;
+  text-transform: uppercase;
+
+}
+
+input[type="button"] {
+  background-color: #3190D8;
+  border-radius: 8px;
+}
+
+$height: 2.8em;
+$width: 10em;
+$button-color: #EE3769;
+
+input[type="submit"] {
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid $button-color;
+  border-radius: 8px;
+  height: $height;
+  width: $width;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  color: $button-color;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  line-height: 250%;
+
+  &::before{
+
+    content:'';
+    border-radius: 50%;
+    display: block;
+    width: $width*2;
+    height: $width*2;
+    line-height: $width*2;
+    left: -$width/2;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+
+  &:hover{
+    color: #fff;
+    &::before{
+    box-shadow:inset 0 0 0 $width rgba($button-color,1);
+    }
+  }
+}
+
+
+input[type="reset"] {
+  background-color: #000;
+  color: #fff;
+}
+

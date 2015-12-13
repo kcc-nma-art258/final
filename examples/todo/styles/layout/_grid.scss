@@ -1,0 +1,59 @@
+
+html,
+body {
+  height: $full-height;
+  width: $full-width;
+  background-color: #000;
+}
+
+
+.container {
+  /* Fixed width: 960px */
+  /* 960px / 16px (base) = 60em - (.625em padding x 2) = 50em */
+  width: 58.75em; /* 60em - (.625em padding x 2) = 50em */
+  margin: 0 auto;
+  position: relative;
+  height: 90%;
+/*
+  @media #{$medium-screen}{
+  width: 20%;
+  }
+
+  @media #{$large-screen}{
+    border: 1px solid blue;
+  width: 60%;
+  }
+
+  @media #{$xlarge-screen}{
+      border: 1px solid green;
+  width: 100%;
+  }
+*/
+}
+
+.row {
+  @include cf;
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+[class^="col-"] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  padding: 0 1em 1em 1em;
+}
+
+.columnstyle {
+text-align: center;
+border: 1px solid #009BFF;
+height: 40px;
+}
+
+@for $i from 1 through 10 {
+  .col-#{$i} {
+    @media screen and (min-width: 600px){
+      width: (100% / 10) * $i;
+    }
+  }
+}
