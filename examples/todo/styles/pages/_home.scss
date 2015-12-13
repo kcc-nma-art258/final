@@ -1,12 +1,42 @@
 body {
 
-    
+
     h2 {
         font-family: 'lato' sans-serif;
         color: #2a2a2a;
         text-transform: uppercase;
         text-align: center;
         padding: 2em 0;
+       }
 
-      }
+    .form {
+      text-align: center;
+
+
+       input[type="text"] {
+         margin-bottom: 1em;
+         font-size: 24px;
+         padding: 10px;
+       }
+
+       input[type="submit"]{
+         display: block;
+         font-size: 14px;
+         padding: 5px;
+         background-color: pink;
+         text-align: center;
+         margin-left: 43%;
+       }
+
+        input[type="checkbox"]:checked{
+
+
+        }
+
+input[type="checkbox"] {
+  
+}
+
+       }
+    }
 }
