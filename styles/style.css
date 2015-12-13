@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Frijole);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 *,
 *::before
 *::after {
@@ -14,20 +14,22 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: auto;
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Frijole', cursive;
   text-align: center;
   padding: 2em;
   font-size: 3em;
 }
 
 h2 {
-  font-family: 'Squada One', cursive;
+  font-family: 'Poiret One', cursive;
+  text-align: right;
   font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .machineframe {
@@ -48,10 +50,6 @@ h2 {
   display: table;
   content: '';
   clear: both;
-}
-
-.pads {
-  margin: 6em;
 }
 
 li {
@@ -81,10 +79,48 @@ li {
   color: #000000;
   height: 200px;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  outline: none;
   border-radius: 30px;
+}
+
+button.pad-1:hover, button.pad-2:hover, button.pad-3:hover, button.pad-4:hover {
+  background-color: #ff3300;
+}
+
+button.pad-5:hover, button.pad-6:hover, button.pad-7:hover, button.pad-8:hover {
+  background-color: #ff9900;
+}
+
+button.pad-9:hover, button.pad-10:hover, button.pad-11:hover, button.pad-12:hover {
+  background-color: #ffff66;
+}
+
+button.pad-13:hover, button.pad-14:hover, button.pad-15:hover, button.pad-16:hover {
+  background-color: #cc00ff;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    background-color: rgba(255, 0, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 0, 1, 0);
+  }
+  100% {
+    background-color: rgba(255, 0, 255, 0);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    background-color: rgba(255, 0, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 0, 1, 0);
+  }
+  100% {
+    background-color: rgba(255, 0, 255, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
