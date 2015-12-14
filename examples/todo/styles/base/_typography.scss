@@ -1,45 +1,6 @@
-/**
- * Typography
- */
-
- //font face
- @font-face {
-    font-family: 'lust_scriptregular';
-    src: url('../fonts/positype_-_lustscript-webfont.eot');
-    src: url('../fonts/positype_-_lustscript-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/positype_-_lustscript-webfont.woff2') format('woff2'),
-         url('../fonts/positype_-_lustscript-webfont.woff') format('woff'),
-         url('../fonts/positype_-_lustscript-webfont.ttf') format('truetype'),
-         url('../fonts/positype_-_lustscript-webfont.svg#lust_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'lust_scriptdisplay';
-    src: url('../fonts/positype_-_lustscriptdisplay-webfont.eot');
-    src: url('../fonts/positype_-_lustscriptdisplay-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/positype_-_lustscriptdisplay-webfont.woff2') format('woff2'),
-         url('../fonts/positype_-_lustscriptdisplay-webfont.woff') format('woff'),
-         url('../fonts/positype_-_lustscriptdisplay-webfont.ttf') format('truetype'),
-         url('../fonts/positype_-_lustscriptdisplay-webfont.svg#lust_scriptdisplay') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
   font-family: 'Lato', sans-serif;
   @media screen and (min-width: 600px){
     font-size: type-scale(1);
   }
-}
-
-
-html {
-  font-size: $base-font;
 }

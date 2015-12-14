@@ -1,13 +1,17 @@
 body {
+        header,
+        h2 {
+          text-align: center;
+          padding-top: 1em;
+        }
+        h2 {
+            font-family: 'lato' sans-serif;
+            color: #2a2a2a;
+            text-transform: uppercase;
+            padding: 0 0 2em 0;
+           }
 
 
-    h2 {
-        font-family: 'lato' sans-serif;
-        color: #2a2a2a;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 2em 0;
-       }
 
     .form {
       text-align: center;
@@ -28,15 +32,27 @@ body {
          margin-left: 43%;
        }
 
-        input[type="checkbox"]:checked{
+       input[type="checkbox"] {
+         background-color: aqua;
 
+       }
+
+        input[type="checkbox"]:checked{
 
         }
 
-input[type="checkbox"] {
-  
-}
+    .memo {
+        padding-left: 35%;
+        display: inline-block;
+        padding-top: 2em;
 
-       }
-    }
+        ul {
+           list-style: none;
+         }
+
+
+
+      }
+
+}
 }
