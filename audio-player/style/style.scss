@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-      background-color: #00CC55;
 }
 
 @mixin cf {
@@ -29,8 +28,9 @@ h1 {
   color: #fff;
 }
 
+
 .trigger-pads {
-  float: right;
+  background-color: #00CC55;
   list-style: none;
   padding: 4em 0.5em 0;
   height: 100%;
@@ -43,6 +43,15 @@ li {
   width: 25%;
   padding: 0.5em;
 }
+
+.back {
+    background-color: #0D9847;
+    padding: 1em;
+    margin: auto 3em;
+  }
+  .row {
+    background-color: #11AF53;
+  }
 
 .pad {
   width: 100%;
@@ -62,9 +71,3 @@ li {
     animation: fadeInOut 0.25s ease;
   }
 }
-
-/*@keyframes fadeInOut {
-  0%   { background-color: rgba(255, 0, 255, 0); }
-  50%  { background-color: rgba(255, 0, 255, 1); }
-  100% { background-color: rgba(255, 0, 255, 0); }
-}*/
