@@ -21,7 +21,7 @@
   }
 }
 
-/* container and media-querie */
+/* container and media-qeries */
 body {
   color: #ffffff;
   background-color: #000000;
@@ -97,18 +97,26 @@ li {
 }
 
 .pad-1:hover, .pad-2:hover, .pad-3:hover, .pad-4:hover {
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
   color: #00ffcc;
 }
 
 .pad-5:hover, .pad-6:hover, .pad-7:hover, .pad-8:hover {
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
   color: #00ffcc;
 }
 
 .pad-9:hover, .pad-10:hover, .pad-11:hover, .pad-12:hover {
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
   color: #00ffcc;
 }
 
 .pad-13:hover, .pad-14:hover, .pad-15:hover, .pad-16:hover {
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
   color: #00ffcc;
 }
 
