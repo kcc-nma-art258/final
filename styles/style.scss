@@ -15,43 +15,33 @@
     }
 }
 
-@import "media_queries";
+@import "grid"; /* container and media-querie */
 @import url(https://fonts.googleapis.com/css?family=Frijole);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-// @import url(https://fonts.googleapis.com/css?family=Slackey);
-// @import url(https://fonts.googleapis.com/css?family=Monoton);
-// @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-// @import url(https://fonts.googleapis.com/css?family=Lobster);
-// @import url(https://fonts.googleapis.com/css?family=Oleo+Script:400,700);
-// @import url(https://fonts.googleapis.com/css?family=Audiowide);
 
 body {
   color: #ffffff;
   background-color: #000000;
 }
 
-.container {
-  width: 940px;
-  margin: auto;
-}
-
 h1 {
   font-family: 'Frijole', cursive;
   text-align: center;
   padding: 1.5em;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 h2 {
   font-family: 'Poiret One', cursive;
   text-align: right;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 1em;
 }
 
 .machineframe {
   background-color: #333333;
   padding: 2em;
+  margin: auto 3em;
   border: 6px solid rgb(255, 255, 255);
   border-radius: 30px;
 }
@@ -88,12 +78,11 @@ li {
 .pad-1, .pad-2, .pad-3, .pad-4, .pad-5, .pad-6, .pad-7, .pad-8, .pad-9, .pad-10, .pad-11, .pad-12, .pad-13, .pad-14, .pad-15, .pad-16 {
   background-color: #ffffff;
   color: #333333;
-  height: 200px;
+  height: 100px;
   width: 100%;
-  outline: none;
+  outline: none; /* 青いライン消す */
   font-family: 'Frijole', cursive;
-  font-size: 2.5em;
-  //appearance: none;
+  font-size: 1.5em;
   border-radius: 30px;
 }
 
