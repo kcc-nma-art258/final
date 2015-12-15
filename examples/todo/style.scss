@@ -15,17 +15,18 @@
 input:checked + .item-title {
   text-decoration: line-through;
   color: yellow;
-  font-family: 'Lato', sans-serif;
+  font-family: $font;
   font-size: 1em;
+  font-style: italic;
 }
 
 .item-title {
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: $font;
   font-weight: normal;
   margin: 0 20px 0 10px;
   font-weight: 100;
-  font-style: italic;
+  font-size: 1em;
 }
 
 
@@ -34,13 +35,17 @@ input[type="text"] {
   border: solid 2px #c9c9c9;
   transition: border 0.3s;
   outline: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: $font;
   font-size: 1.5em;
+}
+
+input[type=checkbox] {
+  border: none;
 }
 
 .title {
   text-align: center;
-  background: #5B075E;
+  background: #000;
   max-width: 500px;
   padding: 2.5em 3em 3em 3em;
   margin: 0 auto;
@@ -53,7 +58,7 @@ h1 {
 
 
 h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: $font;
   font-weight: 300;
   font-style: italic;
   font-size: 1.5em;
