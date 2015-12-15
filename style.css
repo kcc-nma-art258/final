@@ -1,0 +1,3 @@
+*,*::before *::after{padding:0;margin:0;box-sizing:border-box}.trigger-pads{list-style:none;padding:2em,2em;height:100%}.trigger-pads:before,.trigger-pads:after{display:table;content:'';clear:both}li{float:left;width:25%}.pad{height:200px;width:100%;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:blue;border:1px solid #f0f;border-radius:3px}@-webkit-keyframes fadeInOut{0%{background-color:rgba(255,0,255,0)}50%{background-color:rgba(255,0,1,0)}100%{background-color:rgba(255,0,255,0)}}@keyframes fadeInOut{0%{background-color:rgba(255,0,255,0)}50%{background-color:rgba(255,0,1,0)}100%{background-color:rgba(255,0,255,0)}}
+
+/*# sourceMappingURL=style.css.map */
