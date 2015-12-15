@@ -13,7 +13,7 @@
     font: inherit;
     padding: 0.5em 3em;
     margin-bottom: 0.5em;
-    background-color: #DEDEDE;
+  //  background-color: #DEDEDE;
     border-radius: 0px;
 
     &:hover {
@@ -33,7 +33,7 @@
 
 }
 
-button {
+#section02 button {
   display: none;
   position: absolute;
   background: url(../image/remove.svg) no-repeat;
@@ -44,12 +44,12 @@ button {
 li:hover button {
     position: absolute;
   display:inline-block;
-
      background: url(../image/remove.svg) no-repeat;
+     background-color: none;
      background-size: 100% 100%;
-     transition: all 0.3s ease;
+//transition: all 0.3s ease;
      right: 10px;
-     margin: 2px 0;
+margin: 4px 0 2px 0;
 }
 
 input[type="button"] {

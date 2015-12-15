@@ -22,11 +22,16 @@ li {
 }
 
 .section01 {
-  height: 30%;
+  height: 40%;
   padding-top: 10em;
+
+    padding-bottom: 5%;
 
 }
 
+.section02 {
+  padding-bottom: 250px;
+}
 .item {
   border: 1px solid #79DDF3;
   text-align: left;
@@ -68,6 +73,10 @@ text-decoration: line-through;
   }
 }
 
+.item-title {
+  padding-left: 10px;
+}
+
 /* mike */
 .stuff {
   width: 100px;
@@ -82,14 +91,17 @@ text-decoration: line-through;
 
 .theme-1 {
 background-color: red;background: red; /* For browsers that do not support gradients */
- background: -webkit-linear-gradient(#FF2D8E, #FFF958); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(#FF2D8E, #FFF958); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(#FF2D8E, #FFF958); /* For Firefox 3.6 to 15 */
- background: linear-gradient(#FF2D8E, #FFF958); /* Standard syntax */
+ background: -webkit-linear-gradient(#F2EB0F, #FF0099); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#F2EB0F, #FF0099); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#F2EB0F, #FF0099); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#F2EB0F, #FF0099); /* Standard syntax */
 background-position: center;
 background-size: cover;
 font-weight: 200;
-
+.stuff {
+  background-color: #000;
+  border-radius: 0px;
+}
 }
 
 .theme-2 {
@@ -102,7 +114,7 @@ font-weight: 200;
   background-size: cover;
   font-family: serif;
   .stuff {
-    background-color: indigo;
+    background-color: #000;
     border-radius: 0px;
   }
 }
@@ -110,7 +122,7 @@ font-weight: 200;
 .theme-3 {
   background-color: yellow;
   .stuff {
-    background-color: violet;
+    background-color: #000;
     border-radius: 0px;
     transform: rotate(45deg);
   }
@@ -120,7 +132,7 @@ font-weight: 200;
   background-color: green;
 
   .stuff {
-    background-color: chartreuse;
+    background-color: #ddd;
     border-radius: 0px;
     transform: rotate(45deg) scale(0.5);
   }
