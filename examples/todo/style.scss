@@ -43,6 +43,34 @@ input[type=checkbox] {
   border: none;
 }
 
+input.item-checkbox {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    padding: .5em;
+    vertical-align: middle;
+}
+
+input.item-checkbox:checked {
+    background: white;
+}
+
+button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 1px solid white;
+    padding: 1em;
+    color: white;
+
+    &:hover{
+      background: #c0c0c0;
+      color: #000;
+    }
+}
+
+li.item {
+  padding-top: 3em;
+}
+
 .title {
   text-align: center;
   background: #000;
