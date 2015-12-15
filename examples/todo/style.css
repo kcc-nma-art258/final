@@ -67,8 +67,11 @@ form.new-item-form {
 }
 
 input[type="text"] {
-  font-family: sans-serif;
-  font-weight: 100;
+  margin-top: 3em;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  font-size: 0.44444em;
+  letter-spacing: 1px;
   width: 50%;
   height: 20px;
   border-radius: 5px;
