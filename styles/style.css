@@ -96,44 +96,32 @@ li {
   border-radius: 30px;
 }
 
-.pad-1:hover, .pad-2:hover, .pad-3:hover, .pad-4:hover {
-  -webkit-transition: 0.1s ease;
-          transition: 0.1s ease;
-  color: #00ffcc;
-}
-
-.pad-5:hover, .pad-6:hover, .pad-7:hover, .pad-8:hover {
-  -webkit-transition: 0.1s ease;
-          transition: 0.1s ease;
-  color: #00ffcc;
-}
-
-.pad-9:hover, .pad-10:hover, .pad-11:hover, .pad-12:hover {
-  -webkit-transition: 0.1s ease;
-          transition: 0.1s ease;
-  color: #00ffcc;
-}
-
-.pad-13:hover, .pad-14:hover, .pad-15:hover, .pad-16:hover {
-  -webkit-transition: 0.1s ease;
-          transition: 0.1s ease;
-  color: #00ffcc;
-}
-
 button.pad-1:hover, button.pad-2:hover, button.pad-3:hover, button.pad-4:hover {
   background-color: #ff3300;
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
 }
 
 button.pad-5:hover, button.pad-6:hover, button.pad-7:hover, button.pad-8:hover {
   background-color: #ff9900;
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
 }
 
 button.pad-9:hover, button.pad-10:hover, button.pad-11:hover, button.pad-12:hover {
   background-color: #ffff66;
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
 }
 
 button.pad-13:hover, button.pad-14:hover, button.pad-15:hover, button.pad-16:hover {
   background-color: #cc00ff;
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
+}
+
+.pad-1:active, .pad-2:active, .pad-3:active, .pad-4:active, .pad-5:active, .pad-6:active, .pad-7:active, .pad-8:active, .pad-9:active, .pad-10:active, .pad-11:active, .pad-12:active, .pad-13:active, .pad-14:active, .pad-15:active, .pad-16:active {
+  color: #00ffcc;
 }
 
 /*# sourceMappingURL=style.css.map */
