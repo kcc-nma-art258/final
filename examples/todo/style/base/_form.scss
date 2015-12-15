@@ -7,6 +7,7 @@ input[type="checkbox"],
   [type="text"],
   [type="submit"],
   [type="button"]:focus {
+  color: white;
   outline: 0;
   padding: 2em 5em;
   background-color: black;
@@ -67,7 +68,9 @@ input[type="checkbox"],
   }
 
 input[type="submit"]:hover {
-  background-color: red;
+  background-color: #B407B4;
+  border: 1px solid #FA31FA;
+  box-shadow: 0px 0px 20px #FA31FA;
 }
 li.item {
   padding: 1em;
