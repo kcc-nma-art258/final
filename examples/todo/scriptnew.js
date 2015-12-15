@@ -28,10 +28,9 @@ function formListener(e){
   var deleteListItem = document.createElement('button');
   deleteListItem.textContent = 'Remove';
 
-  function removeListItem(event){
-    var listItem = event.target.parentNode
-    var list = listItem.parentNode
-
+  function removeListItem(){
+    var listItem = event.target.parentNode;
+    var list = listItem.parentNode;
     list.removeChild(listItem);
   }
 
@@ -40,7 +39,7 @@ function formListener(e){
   // Add checkbox and title to li element
   item.appendChild(checkbox);
   item.appendChild(title);
-  item.appendChild(deleteListItem)
+  item.appendChild(deleteListItem);
 
   // Add li element to list
   list.insertBefore(item, list.firstChild);
