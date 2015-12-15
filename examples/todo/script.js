@@ -26,7 +26,8 @@ function formListener(e){
   title.textContent = value;
 
   var deleteListItem = document.createElement('button');
-  deleteListItem.textContent = 'Remove';
+  //title.setAttribute('class', 'finished-item');
+  deleteListItem.textContent = 'Delete Item';
 
   function removeListItem(){
     var listItem = event.target.parentNode;

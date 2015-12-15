@@ -2,8 +2,8 @@
 
 $base-font: 16px;
 $line-height: 1.5;
-$serif: 'Lobster Two', Georgia, Times, serif;
-$sans-serif: Helvetica, Arial, sans-serif;
+$serif: 'Amatic SC', Georgia, Times, serif;
+$sans-serif: 'Josefin Sans', Helvetica, Arial, sans-serif;
 $center: center;
 
 /* MIXINS */
@@ -17,4 +17,68 @@ $center: center;
   &:after {
     clear: both;
   }
+}
+
+@mixin button-style {
+  background-color: #ffffff;
+  padding: 2px 5px;
+  border: 2px solid #D8D8D8;
+  border-radius: 5px;
+}
+
+/**
+ * @section Functions
+ */
+
+/**
+ * rem/em Calculator
+ *
+ * target / context = result
+ * @param {$target}  Target size in pixels (ie. 32px)
+ * @param {$context} Font size providing context for proportion, defaults to $base-font)
+ * @param {$unit} unit for rem/em output, defaults to 'em'
+ */
+@function em-calc($target, $context: $base-font, $unit: 'em'){
+  @return #{$target/$context} + $unit;
+}
+
+/**
+ * Exponent Calculator
+ *
+ * https://gist.github.com/scottkellum/1160816
+ * @param {$base} base number
+ * @param {$exponent} exponent/power number
+ */
+@function exponent($base, $exponent){
+  // reset value
+  $value: $base;
+
+  // Positive integers get multiplied
+  @if $exponent > 1 {
+    @for $i from 2 through $exponent {
+      $value: $value * $base;
+    }
+  }
+
+  // Negitive integers get divided.
+  // A number divided by itself is 1
+  @if $exponent < 1 {
+    @for $i from 0 through -$exponent {
+      $value: $value / $base;
+    }
+  }
+
+  // Return the last value written
+  @return ($value);
+}
+
+/**
+ * Type Scale Calculator
+ *
+ * Create typographic scales
+ * @param {$i} increment of scale; 0 is base
+ * @param {$scale} scale ratio; defaults to 1.25
+ */
+@function type-scale($i, $scale: 1.5){
+  @return exponent($scale, $i) * 1em;
 }
