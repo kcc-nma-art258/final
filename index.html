@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <title>YOSH'S FINAL</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,100' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-  <h1>Final</h1>
-  <ul>
-    <li><a href="examples/todo">ToDo<a/></li>
-    <li><a href="examples/audio-player">MPC Audio Player<a/></li>
-    <li><a href="examples/game-rps">Game RPS<a/></li>
-  </ul>
+  <div class="container">
+    <h1>Things To Do,You Must</h1>
+
+
+
+    <!-- Form to create new items -->
+    <form class="new-item-form">
+      <input type="text" name="new-item-input" />
+      <input type="submit" name="new-item-submit" />
+    </form>
+
+    <!-- List of items -->
+    <ul class="list">
+    </ul>
+
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
