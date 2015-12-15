@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Geo);
 
 @import "base/reset";
 @import "base/utilities";
@@ -79,7 +80,7 @@ div {
 
 .button {
   border: solid 2px #D17E36;
-  font-family: "geo";
+  font-family: 'Geo', sans-serif;
   font-size: 38px;
   line-height: 26px;
   margin-top: 125px;
