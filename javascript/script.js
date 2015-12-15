@@ -22,7 +22,7 @@ var samples = [
   'perc_3.mp3',
   'snare_1.mp3',
   'snare_2.mp3',
-  'snare_3.mp3'
+  'snare_3.mp3',
 ];
 
 // Create function to add audio samples to listener
@@ -61,7 +61,7 @@ var keyCode = {
   h: 104,
   j: 106,
   k: 107,
-  l: 108
+  l: 108,
 }
 
 window.addEventListener('keypress', keyPressListener);
