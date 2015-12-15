@@ -11,12 +11,14 @@ font-weight: 200;
 font-size: 18px; /* 100% = 1em = 16px */
 line-height: 1.5em; /* 24px/16px = 1.5em */
 color: #fff;
-  text-align: center;
-  transition: background-color 0.25s ease;
-  background-repeat: no-repeat;
+text-align: center;
+transition: background-color 0.25s ease;
+background-repeat: no-repeat;
 }
 
-
+.dates p {
+  float: left;
+}
 li {
   list-style: none;
 }
@@ -24,16 +26,17 @@ li {
 .section01 {
   height: 40%;
   padding-top: 10em;
-
-    padding-bottom: 5%;
-
+  padding-bottom: 5%;
 }
+
 h6 {
   display: none;
 }
+
 .section02 {
   padding-bottom: 250px;
 }
+
 .item {
   border: 1px solid #79DDF3;
   text-align: left;
@@ -164,20 +167,21 @@ letter-spacing: -8px;
 .day {
     font-weight: 700;
     font-size: 130px;
-line-height: 100px;
+    line-height: 100px;
 
-font-weight: 700;
-font-size: 90px;
-line-height: 50px;
-letter-spacing: -8px;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 50px;
+    letter-spacing: -8px;
 }
+
 h6 {
-  display: block;
-  font-size: 25px;
-  font-weight: 700;
-letter-spacing: 2px;
-padding-bottom: 15px;
-letter-spacing: -2px;
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    letter-spacing: -2px;
 }
 
 p {
@@ -279,7 +283,7 @@ color: #0B6E7C;
       padding-top: 80px;
 }
 
-}
+} /* theme-1 */
 
 
 
