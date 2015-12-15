@@ -1,0 +1,116 @@
+*,
+*::before
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin cf {
+  &:before,
+  &:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+}
+
+@import "grid"; /* container and media-qeries */
+@import url(https://fonts.googleapis.com/css?family=Frijole);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+h1 {
+  font-family: 'Frijole', cursive;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: 'Poiret One', cursive;
+  text-align: right;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.machineframe {
+  background-color: #333333;
+  padding: 2em;
+  margin: auto 3em;
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.trigger-pads {
+  list-style: none;
+  padding: 2em, 2em;
+  height: 100%;
+  @include cf;
+}
+
+li {
+  float:left;
+  width: 25%;
+  padding: 0.5em;
+}
+
+.pad-1, .pad-2, .pad-3, .pad-4 {
+  border: 6px solid rgb(255, 51, 0);
+}
+
+.pad-5, .pad-6, .pad-7, .pad-8 {
+  border: 6px solid rgb(255, 153, 0);
+}
+
+.pad-9, .pad-10, .pad-11, .pad-12 {
+  border: 6px solid rgb(255, 255, 102);
+}
+
+.pad-13, .pad-14, .pad-15, .pad-16 {
+  border: 6px solid rgb(204, 0, 255);
+}
+
+.pad-1, .pad-2, .pad-3, .pad-4, .pad-5, .pad-6, .pad-7, .pad-8, .pad-9, .pad-10, .pad-11, .pad-12, .pad-13, .pad-14, .pad-15, .pad-16 {
+  background-color: #ffffff;
+  color: #333333;
+  height: 100px;
+  width: 100%;
+  outline: none; /* 青いライン消す */
+  font-family: 'Frijole', cursive;
+  font-size: 1.5em;
+  border-radius: 30px;
+}
+
+// .pad-1:hover, .pad-2:hover, .pad-3:hover, .pad-4:hover, .pad-5:hover, .pad-6:hover, .pad-7:hover, .pad-8:hover, .pad-9:hover, .pad-10:hover, .pad-11:hover, .pad-12:hover, .pad-13:hover, .pad-14:hover, .pad-15:hover, .pad-16:hover {
+//   transition: 0.1s ease;
+//   color: #00ffcc;
+// }
+
+button.pad-1:hover, button.pad-2:hover, button.pad-3:hover, button.pad-4:hover {
+  background-color: #ff3300;
+  transition: 0.1s ease;
+}
+
+button.pad-5:hover, button.pad-6:hover, button.pad-7:hover, button.pad-8:hover {
+  background-color: #ff9900;
+  transition: 0.1s ease;
+}
+
+button.pad-9:hover, button.pad-10:hover, button.pad-11:hover, button.pad-12:hover {
+  background-color: #ffff66;
+  transition: 0.1s ease;
+}
+
+button.pad-13:hover, button.pad-14:hover, button.pad-15:hover, button.pad-16:hover {
+  background-color: #cc00ff;
+  transition: 0.1s ease;
+}
+
+.pad-1:active, .pad-2:active, .pad-3:active, .pad-4:active, .pad-5:active, .pad-6:active, .pad-7:active, .pad-8:active, .pad-9:active, .pad-10:active, .pad-11:active, .pad-12:active, .pad-13:active, .pad-14:active, .pad-15:active, .pad-16:active {
+  color: #00ffcc;
+}

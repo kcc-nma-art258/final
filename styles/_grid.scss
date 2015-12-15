@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .machinewid {
+    width: 8.33333%;
+  }
+}
