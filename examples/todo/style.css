@@ -1,0 +1,207 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* MIXINS */
+/**
+ * Type Scale Calculator
+ *
+ * Create typographic scales
+ * @param {$i} increment of scale; 0 is base
+ * @param {$scale} scale ratio; defaults to 1.25
+ */
+.list li {
+  list-style-type: none;
+}
+
+input[type="checkbox"],
+[type="text"],
+[type="submit"],
+[type="button"]:focus {
+  color: white;
+  outline: 0;
+  padding: 1em 2em;
+  background-color: black;
+}
+
+input[type="checkbox"] {
+  background-color: purple;
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  padding: .4em;
+  border: none;
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #a3ffff;
+  -webkit-appearance: none;
+  box-shadow: 0px 0px 4px #FF4FFF;
+  width: 7px;
+  height: 7px;
+  border: none;
+  border-radius: 100%;
+}
+
+input:checked + .item-title {
+  text-decoration: line-through;
+  color: #66afaf;
+  letter-spacing: 2px;
+  text-shadow: 0 0 2em #a3ffff;
+}
+
+input:checked + .item-title + button {
+  font-weight: 100;
+  color: #000;
+  visibility: visible;
+  box-shadow: 0px 0px 4px #FF4FFF;
+}
+
+form.new-item-form {
+  width: 100%;
+  text-align: center;
+}
+
+input[type="text"] {
+  margin-top: 3em;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  font-size: 0.44444em;
+  letter-spacing: 1px;
+  width: 50%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  background-color: purple;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="checkbox"],
+[type="submit"],
+[type="button"]
+:hover {
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #B407B4;
+  border: 1px solid #FA31FA;
+  box-shadow: 0px 0px 20px #FA31FA;
+}
+
+li.item {
+  padding: 0.1em;
+  font-family: "Exo", sans-serif;
+  text-align: left;
+  color: #d9fcfc;
+  letter-spacing: 2px;
+  text-shadow: 0 0 0.2em #a3ffff;
+}
+
+@media screen and (min-width: 500px) {
+  li.item {
+    padding: 0 15%;
+  }
+}
+
+span.item-title {
+  padding: 0 0.5em;
+  max-width: 300px;
+  position: relative;
+  font-size: 16px;
+  line-height: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-family: "Exo", sans-serif;
+  color: none;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+h1,
+h2 {
+  -webkit-text-stroke: 2px #FFED20;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+html {
+  text-align: center;
+  background: url("images/star-wars1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  margin-top: 1em;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em 1em 2em 1em;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    font-size: 1.5em;
+    max-width: 750px;
+  }
+}
+
+button {
+  background-color: purple;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #a3ffff;
+}

@@ -1,0 +1,8 @@
+button {
+  @include button-style;
+  visibility: hidden;
+  &:hover {
+    cursor:pointer;
+    background-color: #a3ffff;
+  }
+}
