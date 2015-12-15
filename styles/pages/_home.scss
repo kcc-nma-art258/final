@@ -28,7 +28,9 @@ li {
     padding-bottom: 5%;
 
 }
-
+h6 {
+  display: none;
+}
 .section02 {
   padding-bottom: 250px;
 }
@@ -79,30 +81,107 @@ text-decoration: line-through;
 
 /* mike */
 .stuff {
-  width: 100px;
-  height: 100px;
+  width: 800px;
+  height: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -50px 0 0 -50px;
-  border-radius: 100px;
+  border-radius: 800px;
   transition: all 0.25s ease;
 }
 
 .theme-1 {
 background-color: red;background: red; /* For browsers that do not support gradients */
- background: -webkit-linear-gradient(#F2EB0F, #FF0099); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(#F2EB0F, #FF0099); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(#F2EB0F, #FF0099); /* For Firefox 3.6 to 15 */
- background: linear-gradient(#F2EB0F, #FF0099); /* Standard syntax */
+ background: -webkit-linear-gradient(#FB831C, #FF0099); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#FB831C, #FF0099); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#FB831C, #FF0099); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#FB831C, #FF0099); /* Standard syntax */
 background-position: center;
 background-size: cover;
 font-weight: 200;
+font-family: 'Open Sans', sans-serif;
+
+header {
+border-bottom: none;
+background-color: rgba(255, 255, 255, 0);
+}
+
 .stuff {
-  background-color: #000;
-  border-radius: 0px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-size: 80%;
+  width: 900px;
+height: 900px;
+position: absolute;
+top: 25%;
+left: 50%;
+margin-left: -450px;
+z-index: 2;
 }
+
+.container {
+width: 960px;
+height: 100%;
+  z-index: 30;
 }
+
+
+h2,
+p,
+h3,
+h5,
+h6 {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+    z-index: 30;
+    text-align: left;
+
+}
+
+h2 {
+  color: #fff;
+font-weight: 700;
+font-size: 120px;
+line-height: 290px;
+
+}
+h5 {
+  font-weight: 500;
+  font-size: 130px;
+    line-height: 130px;
+
+}
+.day {
+    font-weight: 800;
+    font-size: 150px;
+line-height: 100px;
+}
+h6 {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+letter-spacing: 12px;
+padding-bottom: 15px;
+}
+
+.section01 {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.section01 h3 {
+  display: none;
+}
+
+
+
+
+
+}
+
+
 
 .theme-2 {
   background-color: red;background: red; /* For browsers that do not support gradients */
