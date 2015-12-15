@@ -146,22 +146,34 @@ font-weight: 700;
 font-size: 100px;
 line-height: 290px;
 
+font-weight: 700;
+font-size: 80px;
+line-height: 200px;
+
 }
 h5 {
   font-weight: 500;
   font-size: 100px;
     line-height: 130px;
 
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 103px;
 
 }
 .day {
     font-weight: 700;
     font-size: 130px;
 line-height: 100px;
+
+font-weight: 700;
+font-size: 90px;
+line-height: 50px;
+
 }
 h6 {
   display: block;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
 letter-spacing: 12px;
 padding-bottom: 15px;
@@ -176,8 +188,86 @@ padding-bottom: 15px;
   display: none;
 }
 
+.item {
+  border: none;
+  background-color: #000;
+    height: 44px;
+padding: 0px 20px;
+margin: 14px 0;
+}
 
 
+.item-checkbox:checked {
+  display: none;
+  background-color: red;
+  text-decoration: overline;
+}
+
+input.item-checkbox:checked + .item-title {
+text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.25);
+
+}
+
+.button-group {
+  margin: 20px 0 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  button {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.item-title {
+  padding-left: 10px;
+  font-size: 20px;
+      font-weight: 600;
+}
+
+.section02 {
+  padding-bottom: 0
+}
+
+
+input[type="checkbox"] {
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+color: #0B6E7C;
+  &:checked {
+    position: relative;
+    background: transparent;
+
+    &::after {
+      margin: 0;
+      padding: 0;
+
+      content: '\2713';
+      font-size: 25px;
+      display: block;
+      color: #FFC3C3;
+      position: absolute;
+      top: -1px;
+      left: 1px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 
 
 }
