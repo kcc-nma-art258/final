@@ -24,7 +24,7 @@ input:checked + .item-title {
   color: #fff;
   font-family: $font;
   font-weight: normal;
-  margin: 0 20px 0 10px;
+  margin: 0 25px 0 10px;
   font-weight: 100;
   font-size: 1em;
 }
@@ -32,11 +32,12 @@ input:checked + .item-title {
 
 input[type="text"] {
   padding: 10px 85px;
-  border: solid 2px #c9c9c9;
+  border: solid 10px #343434;
   transition: border 0.3s;
   outline: 0;
   font-family: $font;
   font-size: 1.5em;
+  box-shadow: inset 5px 5px 5px 0 #807E7E;
 }
 
 input[type=checkbox] {
@@ -55,15 +56,18 @@ input.item-checkbox:checked {
 }
 
 button {
+    font-size: $font;
     -webkit-appearance: none;
     background: transparent;
     border: 1px solid white;
-    padding: 1em;
+    padding: .5em;
     color: white;
+    font-size: 12px;
 
     &:hover{
-      background: #c0c0c0;
+      background: #fff;
       color: #000;
+
     }
 }
 
