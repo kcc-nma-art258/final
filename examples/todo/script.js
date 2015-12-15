@@ -29,7 +29,7 @@ function formListener(e){
   //title.setAttribute('class', 'finished-item');
   deleteListItem.textContent = 'Delete Item';
 
-  function removeListItem(){
+  function removeListItem(event){
     var listItem = event.target.parentNode;
     var list = listItem.parentNode;
     list.removeChild(listItem);
