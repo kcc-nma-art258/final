@@ -43,6 +43,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   background-color: #a3ffff;
   -webkit-appearance: none;
+  box-shadow: 0px 0px 4px #FF4FFF;
   width: 7px;
   height: 7px;
   border: none;
@@ -60,6 +61,7 @@ input:checked + .item-title + button {
   font-weight: 100;
   color: #000;
   visibility: visible;
+  box-shadow: 0px 0px 4px #FF4FFF;
 }
 
 form.new-item-form {
@@ -181,7 +183,7 @@ html {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1em 0 2em 0;
+  padding: 1em 1em 2em 1em;
 }
 
 @media screen and (min-width: 500px) {
