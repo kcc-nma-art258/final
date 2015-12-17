@@ -1,0 +1,85 @@
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 3em auto;
+}
+
+.row {
+  @include cf;
+  //margin-left: -1em;
+  //margin-right: -1em;
+}
+
+[class^='col-'] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  padding: 0 1em;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @media screen and (min-width: 600px){
+     width: (100% / 12) * $i;
+    }
+  }
+}
+
+.grid-example  { margin-bottom: 50px; }
+
+
+
+.column, .columns {
+  border-radius: .5em;
+  margin-left: 4%;
+  float: left;
+  //line-height: 3em;
+}
+
+.column:first-child, .columns:first-child{
+  margin-left: 0;
+}
+
+.col-1 {
+  width: 4.66666666667%;
+}
+
+.col-2 {
+  width: 13.3333333333%;
+}
+
+.col-3 {
+  width: 22%;
+}
+
+.col-4 {
+  width: 30.6666666667%;
+}
+
+.col-5 {
+  width: 39.3333333333%;
+}
+
+.col-6 {
+  width: 48%;
+}
+
+.col-7 {
+  width: 56.6666666667%;
+}
+
+.col-8 {
+  width: 65.3333333333%;
+}
+
+.col-9 {
+  width: 74%;
+}
+
+.col-10 {
+  width: 82.6666666667%;
+}
+
+.col-11 {
+  width: 91.3333333333%;
+}

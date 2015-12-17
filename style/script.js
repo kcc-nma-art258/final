@@ -27,10 +27,12 @@ var samples = [
 
 // Create function to add audio samples to listener
 function addSamplesToListener(i){
-  
+
   // Create listener for pad button click event
   function padListener(){
-    var audio = new Audio(path + samples[i]);
+    var audioSampleString = path + samples[i];
+    console.log('Button #' + i +': ' + audioSampleString);
+    var audio = new Audio(audioSampleString);
     audio.play();
   }
 
@@ -41,3 +43,24 @@ function addSamplesToListener(i){
 for (var i = 0; i < pads.length; i++){
   addSamplesToListener(i);
 }
+
+// create a object with
+// keyboard keys as properties
+// and Unicode keycode values
+var keyCode = [ 113, 119, 101, 114, 97, 115, 100, 102, 117, 105, 111,
+  112, 104, 106, 107, 108 ]
+
+//keypress listener to find keycode values
+function keyPressListener(event) {
+    var currentKeyCode = event.keyCode;
+
+    for (var i =0; i < pads.length; i++){
+
+      if (event.keyCode === keyCode[i]){
+        pads[i].focus();
+        pads[i].click();
+      }
+    }
+}
+
+window.addEventListener('keypress', keyPressListener);
