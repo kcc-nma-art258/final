@@ -159,18 +159,23 @@
   width: 91.3333333333%;
 }
 
+.info {
+  margin: 1em;
+}
+
 h1 {
   font-family: "Baskerville", Georgia, Palatino, serif;
   font-weight: 400;
   font-size: 2.61792em;
   position: fixed;
   color: #fff;
+  padding: .5em;
 }
 
 .trigger-pads {
   background-color: #00CC55;
   list-style: none;
-  padding: 4em 0.5em 0;
+  padding: 5em 0.5em 0;
   height: 100%;
 }
 
@@ -200,12 +205,12 @@ li {
 
 .pad {
   width: 100%;
-  min-height: 5em;
+  min-height: 10em;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid #64ffff;
+  border: 1px solid cyan;
   border-radius: 3px;
   -webkit-transition: background-color 0.05s ease;
           transition: background-color 0.05s ease;
@@ -219,6 +224,470 @@ li {
   outline: none;
   -webkit-animation: fadeInOut 0.25s ease;
           animation: fadeInOut 0.25s ease;
+}
+
+.pad-1:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-2:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-3:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-4:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-5:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-6:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-7:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-8:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-9:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-10:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-11:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-12:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-13:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-14:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-15:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+.pad-16:focus {
+  -webkit-animation: pad-1-animation 0.25s ease;
+          animation: pad-1-animation 0.25s ease;
+}
+
+@-webkit-keyframes pad-1-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-1-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-2-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-2-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-3-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-3-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-4-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-4-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-5-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-5-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-6-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-6-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-7-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-7-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-8-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-8-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-9-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-9-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-10-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-10-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-11-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-11-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-12-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-12-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-13-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-13-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-14-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-14-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-15-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-15-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes pad-16-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+}
+
+@keyframes pad-16-animation {
+  0% {
+    background-color: rgba(0, 255, 255, 0);
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: rgba(0, 255, 255, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

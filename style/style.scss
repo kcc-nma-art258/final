@@ -19,20 +19,23 @@
  * Layouts
  */
  @import "layout/grid";
-
+.info {
+  margin: 1em;
+}
 h1 {
   font-family: "Baskerville", Georgia, Palatino, serif;;
   font-weight: 400;
   font-size: 2.61792em;
   position: fixed;
   color: #fff;
+  padding: .5em;
 }
 
 
 .trigger-pads {
   background-color: #00CC55;
   list-style: none;
-  padding: 4em 0.5em 0;
+  padding: 5em 0.5em 0;
   height: 100%;
   @include cf;
 }
@@ -55,10 +58,10 @@ li {
 
 .pad {
   width: 100%;
-  min-height: 5em;
+  min-height: 10em;
   appearance: none;
   background-color: rgba(0, 0, 0, .5);
-  border: 1px solid rgb(100, 255, 255);
+  border: 1px solid rgb(0, 255, 255);
   border-radius: 3px;
   transition: background-color 0.05s ease;
 
@@ -70,4 +73,166 @@ li {
     outline: none;
     animation: fadeInOut 0.25s ease;
   }
+}
+
+.pad-1:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-2:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-3:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-4:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-5:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-6:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-7:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-8:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-9:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-10:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-11:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-12:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-13:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-14:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-15:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+.pad-16:focus {
+  animation: pad-1-animation 0.25s ease;
+}
+
+
+
+@keyframes pad-1-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-2-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-3-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-4-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-5-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-6-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-7-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-8-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-9-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-10-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-11-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-12-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-13-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-14-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-15-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
+}
+
+@keyframes pad-16-animation {
+  0%    { background-color: rgba(0, 255, 255, 0);}
+  50%   { background-color: rgba(0, 255, 255, 1);}
+  100%  { background-color: rgba(0, 255, 255, 0);}
 }
