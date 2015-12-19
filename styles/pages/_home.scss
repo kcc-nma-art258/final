@@ -1,0 +1,333 @@
+
+body {
+  background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#10EAD2, #009DE1); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#10EAD2, #009DE1); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#10EAD2, #009DE1); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#10EAD2, #009DE1); /* Standard syntax */
+height: 100%;
+font-family: 'Dosis', sans-serif;
+font-weight: 200;
+font-size: 18px; /* 100% = 1em = 16px */
+line-height: 1.5em; /* 24px/16px = 1.5em */
+color: #fff;
+text-align: center;
+transition: background-color 0.25s ease;
+background-repeat: no-repeat;
+}
+
+.dates p {
+  float: left;
+}
+li {
+  list-style: none;
+}
+
+.section01 {
+  height: 40%;
+  padding-top: 10em;
+  padding-bottom: 5%;
+}
+
+h6 {
+  display: none;
+}
+
+.section02 {
+  padding-bottom: 250px;
+}
+
+.item {
+  border: 1px solid #79DDF3;
+  text-align: left;
+  font-size: 22px;
+  height: 60px;
+padding: 13px 20px;
+}
+
+
+.item-checkbox:checked {
+  background-color: red;
+  text-decoration: overline;
+}
+
+input.item-checkbox:checked + .item-title {
+text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.button-group {
+  margin: 20px 0 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  button {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.item-title {
+  padding-left: 10px;
+}
+
+/* mike */
+.stuff {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  border-radius: 800px;
+  transition: all 0.25s ease;
+}
+
+.theme-1 {
+background-color: red;background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#FB831C, #FF0099); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#FB831C, #FF0099); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#FB831C, #FF0099); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#FB831C, #FF0099); /* Standard syntax */
+background-position: center;
+background-size: cover;
+font-weight: 200;
+font-family: 'Open Sans', sans-serif;
+
+header {
+border-bottom: none;
+background-color: rgba(255, 255, 255, 0);
+}
+
+.stuff {
+  background-color: #fff;
+  border-radius: 50%;
+  background-size: 80%;
+  width: 600px;
+height: 600px;
+position: absolute;
+top: 25%;
+left: 50%;
+margin-left: -300px;
+z-index: 2;
+}
+
+.container {
+width: 960px;
+height: 100%;
+  z-index: 30;
+}
+
+
+h2,
+p,
+h3,
+h5,
+h6 {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+    z-index: 30;
+    text-align: left;
+
+}
+
+h2 {
+  color: #fff;
+font-weight: 700;
+font-size: 100px;
+line-height: 200px;
+
+font-weight: 700;
+font-size: 70px;
+line-height: 200px;
+letter-spacing: -8px;
+}
+h5 {
+  font-weight: 500;
+  font-size: 100px;
+    line-height: 130px;
+
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 103px;
+letter-spacing: -8px;
+}
+
+.wee {
+  font-weight: 500;
+  font-size: 100px;
+    line-height: 130px;
+
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 103px;
+letter-spacing: -8px;
+}
+
+.mon {
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 100px;
+
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 50px;
+    letter-spacing: -8px;
+}
+
+h6 {
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    letter-spacing: -2px;
+}
+
+p {
+  font-size: 15px;
+    font-weight: 500;
+}
+.section01 {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  padding-bottom:100px;
+}
+.section01 h3 {
+  display: none;
+}
+
+.item {
+  border: none;
+  background-color: #000;
+    height: 44px;
+padding: 7px 20px;
+margin: 14px 0;
+}
+
+
+.item-checkbox:checked {
+  display: none;
+  background-color: red;
+  text-decoration: overline;
+}
+
+input.item-checkbox:checked + .item-title {
+text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.25);
+
+}
+
+.button-group {
+  margin: 20px 0 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  button {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.item-title {
+  padding-left: 10px;
+  font-size: 20px;
+      font-weight: 600;
+}
+
+.section02 {
+  padding-bottom: 0
+}
+
+
+input[type="checkbox"] {
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+color: #0B6E7C;
+  &:checked {
+    position: relative;
+    background: transparent;
+
+    &::after {
+      margin: 0;
+      padding: 0;
+
+      content: '\2713';
+      font-size: 25px;
+      display: block;
+      color: #FFC3C3;
+      position: absolute;
+      top: -1px;
+      left: 1px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.section03 {
+      padding-top: 80px;
+}
+
+} /* theme-1 */
+
+
+.theme-2 {
+  background-color: red;background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(#1FD6ED, #CA39F8); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(#1FD6ED, #CA39F8); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(#1FD6ED, #CA39F8); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(#1FD6ED, #CA39F8); /* Standard syntax */
+  background-position: center;
+  background-size: cover;
+  font-family: serif;
+  .stuff {
+    background-color: #000;
+    border-radius: 0px;
+  }
+}
+
+.theme-3 {
+  background-color: yellow;
+  .stuff {
+    background-color: #000;
+    border-radius: 0px;
+    transform: rotate(45deg);
+  }
+}
+
+.theme-4 {
+  background-color: green;
+
+  .stuff {
+    background-color: #ddd;
+    border-radius: 0px;
+    transform: rotate(45deg) scale(0.5);
+  }
+}
