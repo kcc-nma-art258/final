@@ -10,6 +10,10 @@ function formListener(e){
   // Get the value from the form input
   // using the input's name attribute
   var value = form['new-item-input'].value;
+  if (value === '') {
+      return;
+    }
+
 
   // Create new li element to insert in list
   var item = document.createElement('li');
