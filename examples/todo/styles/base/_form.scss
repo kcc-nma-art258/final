@@ -18,19 +18,21 @@ input[type="checkbox"] {
   height: 10px;
   padding: .65em;
   border: 1px solid #333;
-  border-radius: 100%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+
+  &:checked {
+    background-color: #c0c0c0;
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #f8f8f8;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+  }
 }
-
-input[type="checkbox"]:checked {
-  background-color: #c0c0c0;
-  -webkit-appearance: none;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #f8f8f8;
-  border-radius: 100%;
-}
-
-
 
 input:checked + .item-title {
   font-weight: 100;
@@ -38,7 +40,7 @@ input:checked + .item-title {
   color: #ccc;
 }
 
-input:checked + .item-title + button {
+input:checked ~ button {
   font-weight: 100;
   color: #000;
   visibility: visible;
@@ -57,19 +59,19 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-input[type="submit"] {
-  width: 20%;
-  @include button-style;
-}
-
 input[type="checkbox"],
   [type="submit"],
   [type="button"]:hover{
     cursor:pointer;
   }
 
-input[type="submit"]:hover {
-  background-color: #D8D8D8;
+input[type="submit"] {
+  width: 20%;
+  @include button-style;
+
+  &:hover {
+    background-color: #D8D8D8;
+  }
 }
 
 li.item {
@@ -88,4 +90,14 @@ span.item-title {
   position: relative;
   font-size: $base-font;
   line-height: 0;
+}
+
+button {
+  @include button-style;
+  visibility: hidden;
+}
+
+button:hover {
+  cursor:pointer;
+  background-color: #D8D8D8;
 }

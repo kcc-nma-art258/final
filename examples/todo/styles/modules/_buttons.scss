@@ -1,9 +1,0 @@
-button {
-  @include button-style;
-  visibility: hidden;
-}
-
-button:hover {
-  cursor:pointer;
-  background-color: #D8D8D8;
-}

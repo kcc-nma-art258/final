@@ -10,6 +10,11 @@ function formListener(e){
   // Get the value from the form input
   // using the input's name attribute
   var value = form['new-item-input'].value;
+    if (value === '') {
+      return;
+    }
+
+  form['new-item-input'].value= '';
 
   // Create new li element to insert in list
   var item = document.createElement('li');
@@ -26,7 +31,8 @@ function formListener(e){
   title.textContent = value;
 
   var deleteListItem = document.createElement('button');
-  //title.setAttribute('class', 'finished-item');
+  // This is the code for creating a class
+  //deleteListItem.setAttribute('class', 'finished-item');
   deleteListItem.textContent = 'Delete Item';
 
   function removeListItem(event){
@@ -45,7 +51,7 @@ function formListener(e){
 // Add li element to list
 list.insertBefore(item, list.firstChild);
 
-form['new-item-input'].value= '';
+
 
 }
 
