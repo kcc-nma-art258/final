@@ -119,6 +119,7 @@ month[11] = "December";
 var n = month[d.getMonth()];
 document.getElementById("whatmonth").innerHTML = n;
 
+
 //date
 var d = new Date();
     var n = d.getDate();
