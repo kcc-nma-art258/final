@@ -1,5 +1,6 @@
 // Create a variable for the array (list) of pads
 var pads = document.querySelectorAll('.pad');
+//console.log(pads);
 
 // Create a variable with the string path of
 // the folder containing the audio files
@@ -27,10 +28,12 @@ var samples = [
 
 // Create function to add audio samples to listener
 function addSamplesToListener(i){
-  
+
   // Create listener for pad button click event
   function padListener(){
-    var audio = new Audio(path + samples[i]);
+    var audioSampleString = path + samples[i];
+    //console.log('Button #' + (i+1) + ': ' + audioSampleString);
+    var audio = new Audio(audioSampleString);
     audio.play();
   }
 
@@ -41,3 +44,20 @@ function addSamplesToListener(i){
 for (var i = 0; i < pads.length; i++){
   addSamplesToListener(i);
 }
+
+// Create an array with
+// Unicode keycode values
+var keyCode = [ 113, 119, 101, 114, 97, 115, 100, 102, 117, 105, 111, 112, 104, 106, 107, 108 ];
+
+
+// Keypress listener to find keycode values
+function keyPressListener(event) {
+	for (var i = 0; i < pads.length; i++){
+	  if (event.keyCode === keyCode[i]){
+  		pads[i].focus();
+  		pads[i].click();
+	  }
+	}
+}
+
+window.addEventListener('keypress', keyPressListener);
