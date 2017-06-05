@@ -1,0 +1,102 @@
+// Base
+@import "base/reset";
+@import "base/utilities";
+
+
+.container {
+  margin-top: 10em;
+}
+
+.list {
+  list-style: none;
+  margin: 10px;
+}
+
+input:checked + .item-title {
+  text-decoration: line-through;
+  color: yellow;
+  font-family: $font;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.item-title {
+  color: #fff;
+  font-family: $font;
+  font-weight: normal;
+  margin: 0 25px 0 10px;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+
+input[type="text"] {
+  padding: 10px 85px;
+  border: solid 10px #343434;
+  transition: border 0.3s;
+  outline: 0;
+  font-family: $font;
+  font-size: 1.5em;
+  box-shadow: inset 5px 5px 5px 0 #807E7E;
+}
+
+input[type=checkbox] {
+  border: none;
+}
+
+input.item-checkbox {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    padding: .5em;
+    vertical-align: middle;
+}
+
+input.item-checkbox:checked {
+    background: white;
+}
+
+button {
+    font-size: $font;
+    -webkit-appearance: none;
+    background: transparent;
+    border: 1px solid white;
+    padding: .5em;
+    color: white;
+    font-size: 12px;
+
+    &:hover{
+      background: #fff;
+      color: #000;
+
+    }
+}
+
+li.item {
+  padding-top: 3em;
+}
+
+.title {
+  text-align: center;
+  background: #000;
+  max-width: 500px;
+  padding: 2.5em 3em 3em 3em;
+  margin: 0 auto;
+
+h1 {
+ font-family: 'Fjalla One', sans-serif;
+ color: #fff;
+ font-size: 5em;
+}
+
+
+h2 {
+  font-family: $font;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+}
