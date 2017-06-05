@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>SKELEBRO'S ROSHAM'BONE'</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <h1>Final</h1>
-  <ul>
-    <li><a href="examples/todo">ToDo<a/></li>
-    <li><a href="examples/audio-player">MPC Audio Player<a/></li>
-    <li><a href="examples/game-rps">Game RPS<a/></li>
-  </ul>
-</body>
+<center><h1>SKELEBRO'S ROSHAM'BONE'</h1>
+<body>
+<div id="flavor"></div>
+  <div class="img">
+      <img src="http://vignette2.wikia.nocookie.net/undertale/images/4/44/Sansanimated.gif/revision/latest?cb=20151130211747" alt="HTML5 Icon" width="105" height="150">
+      <img src="http://vignette2.wikia.nocookie.net/undertale/images/2/21/Papyrus1.PNG/revision/latest?cb=20151024191010" alt="HTML5 Icon" width="160" height="187">
+</div>
+
+<div id="computer"></div>
+<div id="player"></div>
+
+<div class="rectangle">
+  <div id="message"></div>
+</div>
+
+<div class="container group">
+  <div class="level">YOU LV 1</div>
+      <div id="win" class="scores">Wins:</div>
+      <div id="lose" class="scores">Lose:</div>
+      <div id="tie" class="scores">Tie:</div>
+</div>
+
+<div class = "buttons">
+      <button id="rock" class="button" onclick='playerChoice(0)'>BURNT PAN</button>
+      <button id="paper" class="button" onclick='playerChoice(1)'>TORN NOTEBOOK</button>
+      <button id="scissors" class="button" onclick='playerChoice(2)'>TOY KNIFE</button>
+</div>
+
+   <h5>	Copyright &copy; Toby Fox UNDERTALE</h5>
+
+<!--Don't mind this, I just wanted to put it in for -->
+<audio controls>
+  <source src="http://wada-designs.com/art258/Undertale%20OST%20-%20Nyeh%20Heh%20Heh!%20(Intro)%20+%20Bonetrousle%20Extended.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/index.js"></script>
+
+  </body>
 </html>
